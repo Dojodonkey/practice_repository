@@ -10,4 +10,6 @@ Important steps for git workflow:
 6.) Review previous changes with git log 
 
 Table of Contents: 
-example_file.txt 
+example_file.txt
+
+Hello world  
