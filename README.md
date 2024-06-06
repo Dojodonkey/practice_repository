@@ -12,4 +12,4 @@ Important steps for git workflow:
 Table of Contents: 
 example_file.txt
 
-Hello world  
+Testing for commit on remote repo 
