@@ -174,6 +174,105 @@ obj.sort() = mutated
 set(obj) = neither  
 obj = tuple(obj) = reassignment
 
---Input/Output--
+--Funtions and Methods--
 
+4.) 
+def multiply_numbers(num1, num2, num3):
+    result = num1 * num2 * num3
+    return result
+
+product = multiply_numbers(2, 3, 4)
+
+Identify the following items in that code:
+
+function name = multipy_numbers (lines 1 & 5) 
+function arguments = 2,3,4
+function definition = lines 1-3 
+function body = lines 2 & 3 
+function parameters = (num1, num2, num3) 
+function invocation =  multiply_number(2,3,4) (only on line 5)
+function return value = 24 
+all identifiers = multipy_numbers, num2, num2, num3, result, product 
+
+14.) Identify all of the identifiers on each line of the following code.
+
+
+def multiply(left, right):                            #multiply, left, right 
+    return left * right                               # left, right
+ 
+def get_num(prompt):                                      #get_num, prompt
+    return float(input(prompt))                           #prompt
+
+first_number = get_num('Enter the first number: ')    #first_number, get_num
+second_number = get_num('Enter the second number: ')  #second_number, get_num
+product = multiply(first_number, second_number)   #product, first & second_num 
+print(f'{first_number} * {second_number} = {product}')#first & sec_num, prod     
+
+15.) 
+line 1: multiply (global) left, right (local) 
+line 2: left, right (local) 
+line 4: get_num (global) prompt(local) 
+line 5: float(built-in), input(built-in), prompt(local) 
+line 7: first_number(global), get_num(global) 
+line 8: second_number(global), get_num(global) 
+line 9: product(global), multiply(global), first_num(local), sec_num(local)
+line 10: print(built-in), first(global), second(global), product(global) 
+
+
+16.) 
+function_name(parameters)
+line 1: multiply(left, right) 
+line 4: get_num(prompt) 
+line 5: float , input *built-in functions 
+line 10: print *built-in function
+
+--Flow Control--
+
+1.) 
+False or (True and False)  #False 
+True or (1 + 2)            #True
+(1 + 2) or True            #(1 + 2) 
+True and (1 + 2)           #(1 + 2) 
+False and (1 + 2)          #False 
+(1 + 2) and True           #True
+(32 * 4) >= 129            #False
+False != (not True)        #False 
+True == 4                  #False
+False == (847 == '847')    #True  
+
+2.)
+ def even_or_odd(number):
+    if number % 2 != 0: 
+        print(f'{number} is odd')
+    else: 
+        print(f'{number} is even')
+        
+4.)
+return ('bar' if foo() else qux())
+
+if foo(): 
+    return 'bar' 
+else: 
+    return qux()
+
+6.) 
+def cap_or_not(string):
+    if len(string) > 10: 
+        return string.upper()
+    else: 
+        return string 
+
+print(cap_or_not('morgan wallen'))
+>>> MORGAN WALLEN
+
+7.) 
+def number_range(number):
+    if 0 < number <= 50: 
+        print(f'{number} is between 0 and 50.')
+    elif 51 < number <= 100: 
+        print(f'{number} is between 50 and 100.')
+    elif number < 100: 
+        print(f'{number} is greater than 100.')
+    else: 
+        print(f'{number} is less than 0.') 
 
