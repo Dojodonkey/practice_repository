@@ -1,0 +1,179 @@
+1.) Identifying data 
+
+'True' = string 
+False = boolean 
+(1,2,3) = tuple 
+1.5 = float 
+[1,2,3] = list 
+2 = int
+range(5) = range 
+{1, 2, 3} = set 
+None = NoneValue 
+{'foo': 'bar'} = dictionary 
+
+2.) Create a tuple called names that contains several pet names.   
+
+name = ('Asta', 'Butterscotch', 'Pudding', 'Neptune', 'Darwin') 
+
+--Python Operands--
+
+3.) Use the REPL and the arithmetic operators to extract
+ the individual digits of 4936:
+
+>>> digits = 4963 
+>>> one_place = digits % 10 
+>>> one_place 
+3
+>>> digits //= 10 
+>>> tens_place = digits % 10 
+>>> tens_place 
+6
+>>> digits //= 10 
+>>> hundreds_place = digits % 10 
+>>> hundreds_place 
+9
+>>> digits //= 10 
+>>> thousands_place = digits 
+>>> thousands_place 
+4
+
+4.) What does the following code do and why? print('5' + '10')
+
+>>> 510 because string concatenation
+
+5.) Refactor code from previous excercise to use coercion to print 15 instead
+
+print(int('5') + int('10')) 
+
+6.) Will an error occur if you try to access a list element with an index greater than or equal to the list's length? For example:
+
+foo = ['a', 'b', 'c']
+print(foo[3])      # will this result in an error? 
+
+Yes, IndexError: list index out of range will occur. 
+
+7.) To what value does the following expression evaluate?
+
+'foo' == 'Foo'
+
+False, because capitalization matters in strings. 
+
+8.) What will the following code do? Why?
+
+int('3.1415')
+3 because integers are whole numbers. 
+
+9.) To what value does the following expression evaluate?
+
+'12' < '9'
+True because lexoconically '1' > '9' and the '2' will not be compared.  
+
+--Variables--
+
+1.)
+Classify the following potential non-constant variable names as
+ idiomatic, non-idiomatic, or illegal.
+ For the non-idiomatic and illegal names, explain your choice.
+
+index = idiomatic (doesn't break any rules and is easily readible) 
+CatName = non-idiomatic (capitalized camel case is not typically used) 
+lazy_dog = idiomatic
+quick_Fox = non-idiomatic(capital letter is non-conventional) 
+1stCharacter = illegal (begins with a number)
+operand2 = idiomatic
+BIG_NUMBER = non-idiomatic 
+π = non-idiomatic (extended ASCII character) 
+
+2.) Classify the following potential function names as
+ idiomatic, non-idiomatic, or illegal.
+ For the non-idiomatic and illegal names, explain your choice.
+* functions have the same general rules as variables. 
+
+Name = non-idiomatic
+index = idiomatic 
+CatName = non-idiomatic
+lazy_dog = idiomatic 
+quick_Fox = non-idiomatic 
+1stCharacter = illegal 
+operand2 = idiomatic 
+BIG_NUMBER = non-idiomatic 
+π = non-idiomatic 
+
+3.) Classify the following potential constant names as
+ idiomatic, non-idiomatic, or illegal.
+ For the non-idiomatic and illegal names, explain your choice.
+
+Name = non-idiomatic 
+index = non-idiomatic 
+CatName = non-idiomatic 
+snake_case = non-idiomatic 
+LAZY_DOG3 = idiomatic 
+1ST = illegal 
+operand2 = non-idiomatic 
+BIG_NUMBER = idiomatic 
+Π = non-idiomatic 
+
+4.) Classify the following potential class names as idiomatic, non-idiomatic, or illegal. For the non-idiomatic and illegal names, explain your choice.
+
+index = non-idiomatic 
+CatName = idiomatic 
+Lazy_Dog = non-idiomatic 
+1ST = illegal 
+operand2 = non-idiomatic 
+BigNumber3 = idiomatic 
+Πi = non-idiomatic 
+
+5.) Write a program named greeter.py that greets 'Victor' three times.
+ Your program should use a variable and
+ not hard code the string value 'Victor' in each greeting
+
+name = 'Victor' 
+print("Good Morning," + name + '.') 
+print("Good Morning," + name + '.')
+print("Good Morning," + name + '.')
+
+6.) Write a program named age.py that includes someone's age
+ and then calculates and reports the future age 10, 20, 30, and 40 years
+ from now.
+
+age = int(input('How old are you? '))
+
+print(age)
+print(f'In 10 years, you will be {age + 10} years old.')
+print(f'In 20 years, you will be {age + 20} years old.')
+print(f'In 30 years, you will be {age + 30} years old.')
+
+8.)
+
+ account = 1000
+interest = 0.05
+time = int(input("Over how many years: "))
+
+def expect(account, interest, time):
+    for i in range(time): 
+        account += account * 0.05
+    return account 
+    
+final_amount = expect(account, interest, time)
+print(final_amount) 
+
+
+10.) Assume that obj already has a value of 42 when the code below starts
+ running. Which of the subsequent statements reassign the variable?
+ Which statements mutate the value of the object that obj references?
+ Which statements do neither?
+
+obj = 'ABcd' = reassigned
+obj.upper() = neither 
+obj = obj.lower() = reassignment
+print(len(obj)) = neither
+obj = list(obj) = reassignment
+obj.pop() = mutated 
+obj[2] = 'X' = mutated
+obj.sort() = mutated
+set(obj) = neither  
+obj = tuple(obj) = reassignment
+
+--Input/Output--
+
+
