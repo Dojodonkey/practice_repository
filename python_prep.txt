@@ -276,3 +276,28 @@ def number_range(number):
     else: 
         print(f'{number} is less than 0.') 
 
+--INTRO TO COLLECTIONS--
+
+11.
+Consider the data in the following table:
+
+Name	Country
+Alice	USA
+Francois Canada
+Inti	Peru
+Monika	Germany
+Sanyu	Uganda
+Yoshitaka  Japan
+
+dictionary =
+ {'Alice' : 'USA',
+'Francois' : 'Canada',
+'Inti' : 'Peru', 
+'Monika' : 'Germany',
+'Sanyu' : 'Uganda', 
+'Yoshitaka' : 'Japan'}
+
+print(dictionary['Alice'])
+>>> USA 
+
+
