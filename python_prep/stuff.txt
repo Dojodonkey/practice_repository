@@ -1,0 +1,54 @@
+1.) What does the following function do?
+ Be sure to identify the output value.
+
+def do_something(dictionary):
+    return sorted(dictionary.keys())[1].upper()
+
+my_dict = {
+    'Karl':     108,
+    'Clare':    175,
+    'Karis':    140,
+    'Trevor':   180,
+    'Antonina': 132,
+    'Chris':    101,
+}
+
+print(do_something(my_dict))
+
+>>> CHRIS
+
+#first the dictionary.keys() collects are the keys in the dict. 
+#then sorted() call oranized the keys alphabetically. 
+#Lastly the first index is capitalized. 
+# my_dict is programmed and the print call returns the function
+#with my_dict as the argument.
+
+2.) 
+Use the sqrt function from the math library
+ to write some code that outputs the square root of 37.
+ Try to write the code in three different ways.
+
+import math
+
+print(math.sqrt(37)) 
+
+import math as m 
+
+print(m.sqrt(37))
+
+from math import sqrt
+
+print(sqrt(37)) 
+
+3.)
+Write a nested function in sum_of_squares
+ that will make this code work as shown.
+
+def sum_of_squares(num1, num2):
+	**  def squared(number): **
+		**  return number * number **
+    return squared(num1) + squared(num2)
+
+print(sum_of_squares(3, 4))   # 25 (3 * 3 + 4 * 4)
+print(sum_of_squares(5, 12))  # 169 (5 * 5 + 12 * 12)
+
